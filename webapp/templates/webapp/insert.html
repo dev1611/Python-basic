@@ -1,0 +1,18 @@
+
+<html>
+    <body>
+        <div class="container">
+            <form method="POST">
+              <fieldset>
+                <legend>Form</legend>
+                {% csrf_token %}
+                <table>
+                    {{ form }}
+                </table>
+                <input type="submit" value="submit">
+               
+              </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

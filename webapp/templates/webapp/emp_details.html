@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+{{emp}}
+
+<table>
+    <tr>
+        <th> emp code </th>
+        <th> department </th>
+        <th> score </th>
+        <th> datecreated </th>
+    </tr>
+    {%  for e in emp  %}
+    <tr>
+        <td> {{e.emp_code}} </td>
+        <td> {{e.department}} </td>
+        <td> {{e.score}} </td>
+        <td> {{e.datecreated}} </td>
+    </tr>
+    {%  endfor  %}
+</table>
+    
+</body>
+</html>
